@@ -3,16 +3,16 @@ import React from "react";
 
 const LoginPage = () => {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-[#081b29]">
       <div className="hero-content flex-col max-w-lg w-full ">
         <div className="text-center ">
           <h1 className="text-5xl font-bold pb-5 text-[#00abf0]">Login now!</h1>
         </div>
-        <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form className="card-body">
+        <div className="card shrink-0 w-full max-w-sm ">
+          <form className="card-body backdrop-blur-lg rounded-md bg-[#2265ad]/30">
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Email</span>
+                <span className="label-text text-white">Email</span>
               </label>
               <input
                 type="email"
@@ -23,7 +23,7 @@ const LoginPage = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Password</span>
+                <span className="label-text text-white">Password</span>
               </label>
               <input
                 type="password"
@@ -42,7 +42,7 @@ const LoginPage = () => {
                 Login
               </button>
             </div>
-            <p className="text-center">
+            <p className="text-center text-white">
               Don't have any Account{" "}
               <Link
                 href="/register"

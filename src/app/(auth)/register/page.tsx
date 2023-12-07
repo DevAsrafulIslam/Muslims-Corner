@@ -3,16 +3,18 @@ import React from "react";
 
 const RegisterPage = () => {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen  bg-[#081b29]">
       <div className="hero-content flex-col max-w-lg w-full ">
         <div className="text-center ">
-          <h1 className="text-5xl pb-5 font-bold text-[#00abf0]">Sign Up</h1>
+          <h1 className="text-5xl pb-5 font-bold text-[#00abf0]">
+            Please Sign Up
+          </h1>
         </div>
-        <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form className="card-body">
+        <div className="card shrink-0 w-full max-w-sm">
+          <form className="card-body backdrop-blur-lg rounded-md bg-[#2265ad]/30">
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Name</span>
+                <span className="label-text text-white">Name</span>
               </label>
               <input
                 type="name"
@@ -23,18 +25,18 @@ const RegisterPage = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Email</span>
+                <span className="label-text text-white">Email</span>
               </label>
               <input
                 type="email"
                 placeholder="email"
-                className="input input-bordered"
+                className="input  input-bordered"
                 required
               />
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Password</span>
+                <span className="label-text text-white">Password</span>
               </label>
               <input
                 type="password"
@@ -43,7 +45,10 @@ const RegisterPage = () => {
                 required
               />
               <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
+                <a
+                  href="#"
+                  className="label-text-alt text-white link link-hover"
+                >
                   Forgot password?
                 </a>
               </label>
@@ -53,7 +58,7 @@ const RegisterPage = () => {
                 Sign Up
               </button>
             </div>
-            <p className="text-center">
+            <p className="text-center text-white">
               Already have an Account{" "}
               <Link
                 href="/login"
