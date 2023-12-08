@@ -19,7 +19,7 @@ const Products = () => {
                 className="hover:shadow-xl font-sans text-[#00000098] font-medium border-2 border-dashed bg-white"
                 key={product.id}
               >
-                <Link href="/products/shop">
+                <Link href={{ pathname: `/products/${product.id}` }}>
                   <img
                     className="mx-0 bg-[#dee4e8]"
                     src={product.image}

@@ -3,10 +3,10 @@ import React from "react";
 
 const RegisterPage = () => {
   return (
-    <div className="hero min-h-screen  bg-[#081b29]">
+    <div className="hero min-h-screen ]">
       <div className="hero-content flex-col max-w-lg w-full ">
         <div className="text-center ">
-          <h1 className="text-5xl pb-5 font-bold text-[#00abf0]">
+          <h1 className="text-5xl pb-5 font-bold  text-[#00000098]">
             Please Sign Up
           </h1>
         </div>
@@ -14,7 +14,7 @@ const RegisterPage = () => {
           <form className="card-body backdrop-blur-lg rounded-md bg-[#2265ad]/30">
             <div className="form-control">
               <label className="label">
-                <span className="label-text text-white">Name</span>
+                <span className="label-text ">Name</span>
               </label>
               <input
                 type="name"
@@ -25,7 +25,7 @@ const RegisterPage = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text text-white">Email</span>
+                <span className="label-text">Email</span>
               </label>
               <input
                 type="email"
@@ -36,7 +36,7 @@ const RegisterPage = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text text-white">Password</span>
+                <span className="label-text ">Password</span>
               </label>
               <input
                 type="password"
@@ -45,10 +45,7 @@ const RegisterPage = () => {
                 required
               />
               <label className="label">
-                <a
-                  href="#"
-                  className="label-text-alt text-white link link-hover"
-                >
+                <a href="#" className="label-text-alt link link-hover">
                   Forgot password?
                 </a>
               </label>
@@ -58,17 +55,20 @@ const RegisterPage = () => {
                 Sign Up
               </button>
             </div>
-            <p className="text-center text-white">
+            <p className="text-center">
               Already have an Account{" "}
               <Link
                 href="/login"
-                className="hover:underline hover:text-[#051be8e5] text-[#32bdf4d8]"
+                className="hover:underline text-[#051be8e5]  hover:text-[#00000098]"
               >
                 Login
               </Link>
             </p>
           </form>
         </div>
+        <button className="text-white hover:text-[#00000098] bg-[#00abf0] text-2xl px-8 py-3 rounded-lg">
+          <Link href="/">Go Home</Link>
+        </button>
       </div>
     </div>
   );
