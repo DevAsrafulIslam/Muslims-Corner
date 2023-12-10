@@ -1,4 +1,4 @@
-export const products = [
+export const topproducts = [
   {
     id: "1",
     name: "Old Radio",
@@ -39,47 +39,9 @@ export const products = [
     numReviews: 52,
     category: "Ice Cream",
   },
+
   {
     id: "5",
-    name: "Analog Clock",
-    image: "https://i.ibb.co/JrGX5HT/k5tzkdh3kfdm9bwektmy.webp",
-    description:
-      "Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design",
-    brand: "Cannon",
-    price: 929.99,
-    countInStock: "",
-    rating: 3.4,
-    numReviews: 54,
-    category: "Clock",
-  },
-  {
-    id: "6",
-    name: "Eid Mubarak Card",
-    image: "https://i.ibb.co/w4yJXMh/w1ep4rajm0bi9nbbkixz.webp",
-    description:
-      "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    brand: "Gifter",
-    price: 89.99,
-    countInStock: "",
-    rating: 5,
-    numReviews: 64,
-    category: "Eid Card",
-  },
-  {
-    id: "7",
-    name: "Floral Gift Wrap",
-    image: "https://i.ibb.co/yftkvmK/m73nfgubnxhpi9ke8fu6-1.webp",
-    description:
-      "Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life",
-    brand: "Wafi",
-    category: "QuoteLovin",
-    price: 599.99,
-    countInStock: "",
-    rating: 4.7,
-    numReviews: 120,
-  },
-  {
-    id: "8",
     name: "Note Book",
     image: "https://i.ibb.co/fdms4db/gp9kp8dxxsn5354010te.webp",
     description:

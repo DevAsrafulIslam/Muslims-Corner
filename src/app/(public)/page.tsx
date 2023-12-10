@@ -9,22 +9,22 @@ export default function Home() {
         <div className="carousel container mx-auto flex text-black  w-full mx-w-96">
           <div
             id="item1"
-            className="container mx-auto carousel-item w-full  relative h-96"
+            className="container mx-auto carousel-item w-full  relative "
           >
             <Image
               src="/images/flower.jpeg"
               fill
-              className="object-cover"
+              className="object-cover fixed h-96"
               alt="Picture of the author"
             />
-            <div className="  text-[#00000098] absolute w-full md:w-1/2 text-center md:text-start self-center">
-              <h3 className="text-4xl mx-auto md:items-start md:w-fit sm:text-2xl uppercase  px-4 py-2 bg-[#fde047]">
+            <div className=" container text-[#00000098] absolute   self-center">
+              <h3 className="text-4xl uppercase w-fit px-1 py-1 bg-[#fde047]">
                 25% off
               </h3>
-              <h3 className="text-2xl md:text-5xl bg-slate-300 md:bg-inherit mx-auto  w-fit px-4 py-8  my-4">
+              <h5 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl max-w-md w-full opacity-12 bg-white md:bg-transparent p-2 my-4 md:p-0">
                 Tick & Glow's Timeless Elegance
-              </h3>
-              <p className="hidden md:block">
+              </h5>
+              <p className="hidden md:block w-1/2">
                 Elevate your surroundings with the timeless elegance of our wall
                 clocks, each tick matched with the warm glow of our stylish
                 lamps.Elevate your surroundings with the timeless elegance of
@@ -41,14 +41,14 @@ export default function Home() {
               className="object-cover"
               alt="Picture of the author"
             />
-            <div className=" container text-[#00000098] absolute w-5/12   self-center">
+            <div className=" container text-[#00000098] absolute self-center">
               <h3 className="text-4xl uppercase w-fit px-1 py-1 bg-[#fde047]">
                 30% off
               </h3>
-              <h3 className="text-5xl my-4">
-                Elegant Timepieces and Accessories
+              <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl max-w-md w-full opacity-12 bg-white md:bg-transparent p-2 md:p-0">
+                Tick & Glow's Timeless Elegance
               </h3>
-              <p>
+              <p className="hidden md:block w-1/2">
                 Elevate your surroundings with the timeless elegance of our wall
                 clocks, each tick matched with the warm glow of our stylish
                 lamps.Elevate your surroundings with the timeless elegance of

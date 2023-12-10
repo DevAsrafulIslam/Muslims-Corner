@@ -8,6 +8,9 @@ const nextConfig = {
       {
         hostname: "cdn.shopify.com",
       },
+      {
+        hostname: "i.ibb.co",
+      },
     ],
   },
 };

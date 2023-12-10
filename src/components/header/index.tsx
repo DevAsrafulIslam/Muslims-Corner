@@ -4,24 +4,61 @@ import React from "react";
 
 export const Header = () => {
   return (
-    <header className="border-b bg-white text-[#00000098]">
-      <nav className="container h-20  flex justify-between items-center gap-3">
-        <div className="text-3xl font-mono">
-          <Image
-            className=""
-            src="/logo/aafiyah-logo.svg"
-            width={200}
-            height={200}
-            alt="LoGo"
-          />
+    <header className="navbar container bg-base-100">
+      <div className="navbar-start grid grid-cols-2 w-full md:grid-cols-none">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+            <li>
+              <Link href="/login">Login</Link>
+            </li>
+            <li>
+              <Link href="/register">Register</Link>
+            </li>
+          </ul>
         </div>
-        <div className="flex font-semibold gap-6 text-lg">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/login">Login</Link>
-          <Link href="/register">Register</Link>
-        </div>
-      </nav>
+        <a className="text-xl md:text-3xl font-bold">𝘔𝘶𝘴𝘭𝘪𝘮'𝘴 𝘊𝘰𝘳𝘯𝘦𝘳</a>
+      </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/login">Login</Link>
+          </li>
+          <li>
+            <Link href="/register">Register</Link>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 };

@@ -1,9 +1,11 @@
+"use client";
+import { Metadata } from "next";
 import React from "react";
 
 export const Footer = () => {
   return (
     <div className="">
-      <div className=" bg-[#374151] text-white max-h-screen ">
+      <div className=" bg-[#374151] text-white  ">
         <div className="container pt-14 pb-12 grid grid-cols-12 gap-5 md:gap-10 justify-between md:justify-start">
           {/* about */}
           <div className=" space-y-3 md:space-y-6 text-center xl:text-left col-span-12 xl:col-span-4">
