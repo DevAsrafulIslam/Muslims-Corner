@@ -48,7 +48,7 @@ const LoginPage = () => {
               </button>
             </div>
             <p className="text-center text-white">
-              Don't have any Account{" "}
+              Don&apos;t have any Account{" "}
               <Link
                 href="/register"
                 className="hover:underline text-[#051be8e5]  hover:text-[#00000098]"

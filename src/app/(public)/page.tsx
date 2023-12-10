@@ -22,7 +22,7 @@ export default function Home() {
                 25% off
               </h3>
               <h5 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl max-w-md w-full opacity-12 bg-white md:bg-transparent p-2 my-4 md:p-0">
-                Tick & Glow&#39s Timeless Elegance
+                Tick & Glow&apos;s Timeless Elegance
               </h5>
               <p className="hidden md:block w-1/2">
                 Elevate your surroundings with the timeless elegance of our wall
@@ -46,7 +46,7 @@ export default function Home() {
                 30% off
               </h3>
               <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl max-w-md w-full opacity-12 bg-white md:bg-transparent p-2 md:p-0">
-                Tick & Glow&#39s Timeless Elegance
+                Tick & Glow&apos;s Timeless Elegance
               </h3>
               <p className="hidden md:block w-1/2">
                 Elevate your surroundings with the timeless elegance of our wall
