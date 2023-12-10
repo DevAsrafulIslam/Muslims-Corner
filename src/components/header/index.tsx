@@ -41,7 +41,7 @@ export const Header = () => {
             </li>
           </ul>
         </div>
-        <a className="text-xl md:text-3xl font-bold">𝘔𝘶𝘴𝘭𝘪𝘮'𝘴 𝘊𝘰𝘳𝘯𝘦𝘳</a>
+        <a className="text-xl md:text-3xl font-bold">𝘔𝘶𝘴𝘭𝘪𝘮&#39𝘴 𝘊𝘰𝘳𝘯𝘦𝘳</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
