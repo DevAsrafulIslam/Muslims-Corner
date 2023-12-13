@@ -1,77 +1,28 @@
-import Link from "next/link";
 import React from "react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
-const RegisterPage = () => {
+const Register = () => {
   return (
-    <div className="hero min-h-screen ]">
-      <div className="hero-content flex-col max-w-lg w-full ">
-        <div className="text-center ">
-          <h1 className="text-5xl pb-5 font-bold  text-[#00000098]">
-            Please Sign Up
-          </h1>
+    <div className="container h-[100vh] w-full grid md:flex ">
+      <Button className="mt-4">
+        <Link href="/">Go Home</Link>
+      </Button>
+      <div className=" w-full  flex items-center justify-center">
+        <div className=" flex flex-wrap space-y-4 md:w-1/2 border p-8">
+          <h1 className="text-center text-3xl my-4">Register Now!</h1>
+          <Input type="text" placeholder="Name" />
+          <Input type="email" placeholder="Email" />
+          <Input type="number" placeholder="Phone Number" />
+
+          <Input type="password" placeholder="Password" />
+
+          <Button className="mt-4">Sign Up</Button>
         </div>
-        <div className="card shrink-0 w-full max-w-sm">
-          <form className="card-body backdrop-blur-lg rounded-md bg-[#2265ad]/30">
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text ">Name</span>
-              </label>
-              <input
-                type="name"
-                placeholder="name"
-                className="input input-bordered"
-                required
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Email</span>
-              </label>
-              <input
-                type="email"
-                placeholder="email"
-                className="input  input-bordered"
-                required
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text ">Password</span>
-              </label>
-              <input
-                type="password"
-                placeholder="password"
-                className="input input-bordered"
-                required
-              />
-              <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
-              </label>
-            </div>
-            <div className="form-control mt-6">
-              <button className="btn hover:bg-[#32bdf4d8] bg-[#00abf0]">
-                Sign Up
-              </button>
-            </div>
-            <p className="text-center">
-              Already have an Account{" "}
-              <Link
-                href="/login"
-                className="hover:underline text-[#051be8e5]  hover:text-[#00000098]"
-              >
-                Login
-              </Link>
-            </p>
-          </form>
-        </div>
-        <button className="text-white hover:text-[#00000098] bg-[#00abf0] text-2xl px-8 py-3 rounded-lg">
-          <Link href="/">Go Home</Link>
-        </button>
       </div>
     </div>
   );
 };
 
-export default RegisterPage;
+export default Register;
