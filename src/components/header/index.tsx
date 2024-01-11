@@ -20,7 +20,7 @@ export const Header = () => {
   return (
     <header className="flex justify-between mt-2 animate__animated animate__zoomIn navbar container bg-base-100">
       <DropdownMenubar />
-      <a className="text-xl md:text-3xl font-bold">𝘔𝘶𝘴𝘭𝘪𝘮{"'"}𝘴 𝘊𝘰𝘳𝘯𝘦𝘳</a>
+      <a className="text-xl md:text-3xl font-bold">𝘔𝘶𝘴𝘭𝘪𝘮𝘴 𝘊𝘰𝘳𝘯𝘦𝘳</a>
       <NavMenu />
       <Mood />
     </header>
