@@ -16,11 +16,11 @@ const settings: Settings = {
 function Carousel() {
   return (
     <Slider {...settings}>
-      <div className="relative h-40 md:h-96">
+      <div className="relative w-full h-40 md:h-96">
         <Image
           src="/images/watch.jpeg"
-          width={100}
-          height={100}
+          width={1350}
+          height={0}
           alt=""
           className="object-cover"
         />
@@ -42,8 +42,8 @@ function Carousel() {
       <div className="relative w-full h-40 md:h-96">
         <Image
           src="/images/flower.jpeg"
-          width={100}
-          height={100}
+          width={1350}
+          height={0}
           alt=""
           className="object-cover"
         />
