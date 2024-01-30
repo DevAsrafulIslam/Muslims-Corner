@@ -17,7 +17,13 @@ function Carousel() {
   return (
     <Slider {...settings}>
       <div className="relative h-40 md:h-96">
-        <Image src="/images/watch.jpeg" fill className="object-cover" />
+        <Image
+          src="/images/watch.jpeg"
+          width={100}
+          height={100}
+          alt=""
+          className="object-cover"
+        />
         <div className="container flex items-center  absolute top-0 left-0 bg-[#b6b6b465] h-full w-full text-start">
           <div className="md:w-1/2">
             <h4 className="text-xl uppercase md:text-2xl bg-[#f99d2c] w-fit py-2 px-4">
@@ -33,8 +39,14 @@ function Carousel() {
           </div>
         </div>
       </div>
-      <div className="relative h-40 md:h-96">
-        <Image src="/images/flower.jpeg" fill className="object-cover" />
+      <div className="relative w-full h-40 md:h-96">
+        <Image
+          src="/images/flower.jpeg"
+          width={100}
+          height={100}
+          alt=""
+          className="object-cover"
+        />
         <div className="container absolute flex items-center top-0 left-0 bg-[#b6b6b465] h-full w-full text-start">
           <div className="md:w-1/2">
             <h4 className="text-xl uppercase md:text-2xl bg-[#f99d2c] w-fit py-2 px-4">
