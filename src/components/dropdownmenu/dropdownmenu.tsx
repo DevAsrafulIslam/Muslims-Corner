@@ -15,6 +15,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { FaBarsStaggered } from "react-icons/fa6";
 import Link from "next/link";
+import {
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "../ui/navigation-menu";
 
 export function DropdownMenubar() {
   const [position, setPosition] = React.useState("bottom");
