@@ -5,10 +5,10 @@ import React, { useState } from "react";
 
 const Categories = () => {
   // State to track the selected category
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   // Function to handle category click and set the selected category
-  const handleCategoryClick = (category) => {
+  const handleCategoryClick = (category: string) => {
     setSelectedCategory(category);
   };
 
