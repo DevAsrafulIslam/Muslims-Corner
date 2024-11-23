@@ -40,6 +40,9 @@ export function DropdownMenubar() {
           <Link href="/">Home</Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
+          <Link href="/menu">Menu</Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
           <Link href="/about">About</Link>
         </DropdownMenuItem>
         <DropdownMenuItem>

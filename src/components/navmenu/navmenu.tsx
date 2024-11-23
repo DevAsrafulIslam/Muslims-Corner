@@ -27,6 +27,11 @@ export function NavMenu() {
       </MenubarMenu>
       <MenubarMenu>
         <MenubarTrigger>
+          <Link href="/menu">Menu</Link>
+        </MenubarTrigger>
+      </MenubarMenu>
+      <MenubarMenu>
+        <MenubarTrigger>
           <Link href="/about">About</Link>
         </MenubarTrigger>
       </MenubarMenu>
