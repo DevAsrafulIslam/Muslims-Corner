@@ -5,10 +5,10 @@ import React, { useState } from "react";
 
 const Categories = () => {
   // State to track the selected category
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   // Function to handle category click and set the selected category
-  const handleCategoryClick = (category) => {
+  const handleCategoryClick = (category: string) => {
     setSelectedCategory(category);
   };
 
@@ -18,7 +18,7 @@ const Categories = () => {
     : categories;
 
   return (
-    <div className="my-4">
+    <div>
       <h1 className="text-3xl text-center mt-4 text-[#00000098]">Categories</h1>
 
       {/* Category filter buttons */}
@@ -54,23 +54,21 @@ const Categories = () => {
         {filteredItems.map((item) => (
           <div
             key={item.id}
-            className="border border-dashed rounded-md hover:shadow-md"
+            className="border border-dashed rounded-md p-4 hover:shadow-md"
           >
             <img
               src={item.image}
               alt={item.name}
-              className="w-full h-52 object-cover rounded-md mb-4"
+              className="w-full h-40 object-cover rounded-md mb-4"
             />
-            <div className="px-4 pb-4">
-              <h2 className="text-lg font-semibold">{item.name}</h2>
-              <p className="text-gray-500">{item.shortDescription}</p>
-              <span className="flex justify-between items-center">
-                <p className="text-[#9b2d11] font-bold mt-2">৳{item.price}</p>
-                <button className="text-white bg-slate-600 p-2 rounded mt-2">
-                  Buy Now
-                </button>
-              </span>
-            </div>
+            <h2 className="text-lg font-semibold">{item.name}</h2>
+            <p className="text-gray-500">{item.shortDescription}</p>
+            <span className="flex justify-between items-center">
+              <p className="text-[#9b2d11] font-bold mt-2">৳{item.price}</p>
+              <button className="text-white bg-slate-600 p-2 rounded mt-2">
+                Buy Now
+              </button>
+            </span>
           </div>
         ))}
       </div>
