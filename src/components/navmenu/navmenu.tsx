@@ -37,6 +37,11 @@ export function NavMenu() {
       </MenubarMenu>
       <MenubarMenu>
         <MenubarTrigger>
+          <Link href="/recycle">Recycle</Link>
+        </MenubarTrigger>
+      </MenubarMenu>
+      <MenubarMenu>
+        <MenubarTrigger>
           <Link href="/login">Login</Link>
         </MenubarTrigger>
       </MenubarMenu>

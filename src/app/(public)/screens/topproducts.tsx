@@ -12,19 +12,20 @@ const TopProducts = () => {
       </h2>
       {/*  border-2 border-[#0c232722] border-dashed w-3/12 */}
       <div className="">
-        <div className="grid mx-auto gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {topproducts.map((topproduct) => (
             <div
-              className="hover:shadow-xl font-sans text-[#00000098] font-medium border-2 border-dashed bg-white"
+              className="border border-dashed rounded-md  hover:shadow-md"
               key={topproduct.id}
             >
-              <Link href={{ pathname: `/products/${topproduct.id}` }}>
-                <Image
-                  className="mx-0 bg-[#dee4e8]"
+              <Link
+                href={{ pathname: `/products/${topproduct.id}` }}
+                className="relative aspect-square block"
+              >
+                <img
                   src={topproduct.image}
                   alt={topproduct.name}
-                  width={300}
-                  height={300}
+                  className="w-full h-52 object-cover rounded-md mb-4"
                 />
                 <div className="container flex justify-between ">
                   <span>
@@ -41,7 +42,7 @@ const TopProducts = () => {
                 <div className="divider my-0"></div>
                 <div className="container my-2 flex justify-between self-center">
                   <p className="text-[#9b2d11]">
-                    $<span className="text-2xl">{topproduct.price}</span>
+                    ৳<span className="text-2xl">{topproduct.price}</span>
                   </p>
                   <button className="flex items-center gap-2 hover:text-[#0a80c8]">
                     <FaCartShopping />

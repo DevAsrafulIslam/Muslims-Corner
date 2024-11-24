@@ -1,6 +1,4 @@
 import { products } from "@/data/product";
-import { topproducts } from "@/data/topproducts";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
@@ -14,21 +12,20 @@ const Products = () => {
         </h2>
         {/*  border-2 border-[#0c232722] border-dashed w-3/12 */}
         <div className="">
-          <div className="grid mx-auto gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {products.map((product) => (
               <div
-                className="hover:shadow-xl font-sans text-[#00000098] font-medium border-2 border-dashed bg-white flex flex-col justify-between"
+                className="border border-dashed rounded-md hover:shadow-md"
                 key={product.id}
               >
                 <Link
                   href={{ pathname: `/products/${product.id}` }}
                   className="relative aspect-square block"
                 >
-                  <Image
-                    className="object-cover"
+                  <img
                     src={product.image}
-                    fill
                     alt={product.name}
+                    className="w-full h-52 object-cover rounded-md "
                   />
                 </Link>
                 <div>
@@ -44,15 +41,14 @@ const Products = () => {
                       </h4>
                     </span>
                   </div>
-                  <div className="divider my-0"></div>
                   <div className="container my-2 flex justify-between self-center">
                     <p className="text-[#9b2d11]">
-                      $<span className="text-2xl">{product.price}</span>
+                      ৳<span className="text-2xl">{product.price}</span>
                     </p>
-                    <p className="flex items-center gap-2 hover:text-[#0a80c8]">
+                    <button className="flex items-center gap-2 hover:text-[#0a80c8]">
                       <FaCartShopping />
                       Product Details
-                    </p>
+                    </button>
                   </div>
                 </div>
               </div>
