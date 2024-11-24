@@ -31,7 +31,11 @@ const Categories = () => {
       {/* Category filter buttons */}
       {/* Select dropdown for categories */}
       <div className="my-4 max-w-sm mx-auto">
-        <Select onValueChange={(value) => setSelectedCategory(value)}>
+        <Select
+          onValueChange={(value) =>
+            setSelectedCategory(value === "all" ? null : value)
+          }
+        >
           <SelectTrigger className="w-full">
             <SelectValue placeholder="Select a category" />
           </SelectTrigger>
@@ -40,7 +44,7 @@ const Categories = () => {
             <SelectItem value="Wedding Gifts">Wedding Gifts</SelectItem>
             <SelectItem value="Decor">Decor</SelectItem>
             <SelectItem value="Clothing">Clothing</SelectItem>
-            <SelectItem value={null}>All Categories</SelectItem>
+            <SelectItem value="all">All Categories</SelectItem>
           </SelectContent>
         </Select>
       </div>
