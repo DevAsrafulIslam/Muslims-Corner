@@ -1,5 +1,12 @@
 "use client";
 
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { categories } from "@/data/categories";
 import React, { useState } from "react";
 
@@ -18,35 +25,24 @@ const Categories = () => {
     : categories;
 
   return (
-    <div>
+    <div className="p-4">
       <h1 className="text-3xl text-center mt-4 text-[#00000098]">Categories</h1>
 
       {/* Category filter buttons */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 justify-center gap-4 my-4">
-        {[
-          "Books",
-          "Wedding Gifts",
-          "Decor",
-          "Clothing",
-          "Home & Kitchen",
-          "Cosmetics",
-        ].map((category) => (
-          <button
-            key={category}
-            onClick={() => handleCategoryClick(category)}
-            className="px-4 py-2 border rounded-md text-white bg-gray-600 hover:bg-gray-700"
-          >
-            {category}
-          </button>
-        ))}
-
-        {/* Reset button to show all categories */}
-        <button
-          onClick={() => setSelectedCategory(null)} // Reset filter
-          className="px-4 py-2 border rounded-md text-white bg-gray-600 hover:bg-gray-700"
-        >
-          All Categories
-        </button>
+      {/* Select dropdown for categories */}
+      <div className="my-4 max-w-sm mx-auto">
+        <Select onValueChange={(value) => setSelectedCategory(value)}>
+          <SelectTrigger className="w-full">
+            <SelectValue placeholder="Select a category" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="Books">Books</SelectItem>
+            <SelectItem value="Wedding Gifts">Wedding Gifts</SelectItem>
+            <SelectItem value="Decor">Decor</SelectItem>
+            <SelectItem value="Clothing">Clothing</SelectItem>
+            <SelectItem value={null}>All Categories</SelectItem>
+          </SelectContent>
+        </Select>
       </div>
 
       {/* Display filtered items */}
