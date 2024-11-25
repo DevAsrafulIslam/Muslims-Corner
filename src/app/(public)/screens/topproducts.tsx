@@ -29,14 +29,10 @@ const TopProducts = () => {
                 />
                 <div className="container flex justify-between ">
                   <span>
-                    <h4>{topproduct.brand}</h4>
                     <h4>{topproduct.name}</h4>
                   </span>
                   <span>
-                    <h4>{topproduct.rating}</h4>
-                    <h4 className="text-[13px]">
-                      {topproduct.numReviews} reviews
-                    </h4>
+                    <h4 className="text-[13px]"></h4>
                   </span>
                 </div>
                 <div className="divider my-0"></div>

@@ -31,14 +31,10 @@ const Products = () => {
                 <div>
                   <div className="container flex justify-between ">
                     <span>
-                      <h4>{product.brand}</h4>
                       <h4>{product.name}</h4>
                     </span>
                     <span>
-                      <h4>{product.rating}</h4>
-                      <h4 className="text-[13px]">
-                        {product.numReviews} reviews
-                      </h4>
+                      <h4 className="text-[13px]"></h4>
                     </span>
                   </div>
                   <div className="container my-2 flex justify-between self-center">
