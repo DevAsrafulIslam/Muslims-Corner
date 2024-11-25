@@ -27,23 +27,21 @@ const TopProducts = () => {
                   alt={topproduct.name}
                   className="w-full h-52 object-cover rounded-md mb-4"
                 />
-                <div className="container flex justify-between ">
-                  <span>
-                    <h4>{topproduct.name}</h4>
-                  </span>
-                  <span>
-                    <h4 className="text-[13px]"></h4>
-                  </span>
-                </div>
+                <h2 className="text-lg font-semibold">{topproduct.name}</h2>
+                <p className="text-gray-500">{topproduct.shortDescription}</p>
                 <div className="divider my-0"></div>
                 <div className="container my-2 flex justify-between self-center">
                   <p className="text-[#9b2d11]">
                     ৳<span className="text-2xl">{topproduct.price}</span>
                   </p>
-                  <button className="flex items-center gap-2 hover:text-[#0a80c8]">
-                    <FaCartShopping />
-                    Product Details
-                  </button>
+                  <span className="flex space-x-2">
+                    <button className="text-white bg-orange-300 p-2 rounded mt-2">
+                      Add Cart
+                    </button>
+                    <button className="text-white bg-slate-600 p-2 rounded mt-2">
+                      Buy Now
+                    </button>
+                  </span>
                 </div>
               </Link>
             </div>
