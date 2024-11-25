@@ -67,6 +67,7 @@ export const products = [
     shortDescription: "A classic black abaya for a modest yet modern look.",
     image: "https://i.ibb.co.com/cXvMs4t/Lebeni-Cape-Designs.jpg",
     category: "Clothing",
+    countInStock: 10,
   },
 
   {
