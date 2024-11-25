@@ -65,9 +65,14 @@ const Categories = () => {
             <p className="text-gray-500">{item.shortDescription}</p>
             <span className="flex justify-between items-center">
               <p className="text-[#9b2d11] font-bold mt-2">৳{item.price}</p>
-              <button className="text-white bg-slate-600 p-2 rounded mt-2">
-                Buy Now
-              </button>
+              <span className="flex space-x-2">
+                <button className="text-white bg-orange-300 p-2 rounded mt-2">
+                  Add Cart
+                </button>
+                <button className="text-white bg-slate-600 p-2 rounded mt-2">
+                  Buy Now
+                </button>
+              </span>
             </span>
           </div>
         ))}

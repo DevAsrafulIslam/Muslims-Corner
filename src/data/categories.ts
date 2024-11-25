@@ -1,35 +1,3 @@
-// https://ibb.co.com/pZXZdSP
-// https://ibb.co.com/wJM87yf
-// https://ibb.co.com/vssZMt3
-// https://ibb.co.com/80kffv3
-// https://ibb.co.com/BcKNyFj
-// https://ibb.co.com/Z80DxT2
-// https://ibb.co.com/MZnHj2T
-// https://ibb.co.com/KKzwZLp
-// https://ibb.co.com/YcXwyyP
-// https://ibb.co.com/6WwYnpt
-// https://ibb.co.com/jGMHWWy
-// https://ibb.co.com/YBdCp0t
-// https://ibb.co.com/f4mXvkk
-// https://ibb.co.com/2qxm64t
-// https://ibb.co.com/xHqSVWt
-// https://ibb.co.com/s2LmNsJ
-
-// https://ibb.co.com/DCCQwkv
-// https://ibb.co.com/3vBJ9wk
-// https://ibb.co.com/LzXFtnq
-// https://ibb.co.com/qDd17RF
-// https://ibb.co.com/m0hCbvK
-// https://ibb.co.com/ZLRbJ13
-// https://ibb.co.com/41Fb85r
-// https://ibb.co.com/4gf90hM
-// https://ibb.co.com/sWq6DbV
-// https://ibb.co.com/KbdQk29
-// https://ibb.co.com/RDCDsxc
-// https://ibb.co.com/N3GqShM
-// https://ibb.co.com/SfnxxZQ
-// https://ibb.co.com/JjJkjpv
-
 export const categories = [
   {
     id: 1,
@@ -442,14 +410,7 @@ export const categories = [
     image: "https://example.com/images/bathrobe-set.jpg",
     category: "Wedding Gifts",
   },
-  {
-    id: 40,
-    name: "Golden Cutlery Set",
-    price: 59.99,
-    shortDescription: "A stylish golden cutlery set for dining elegance.",
-    image: "https://example.com/images/cutlery-set.jpg",
-    category: "Wedding Gifts",
-  },
+
   {
     id: 41,
     name: "Custom Engraved Rings",
@@ -465,5 +426,129 @@ export const categories = [
     shortDescription: "An exclusive set of perfumes for him and her.",
     image: "https://i.ibb.co.com/K7y7WJG/1.jpg",
     category: "Wedding Gifts",
+  },
+  {
+    id: 78,
+    name: "Personalized Prayer Set",
+    price: 200.0,
+    shortDescription:
+      "A luxurious Islamic gift set featuring a velvet Quran cover with intricate gold details, accompanied by pearl prayer beads.",
+    image:
+      "https://i.ibb.co.com/C1WGdr6/Buy-Personalized-Prayer-Velvet-Quran-Pearl-Prayer-Beads-Islamic-Gift-Set-Eid-Gift-Wedding-Favors-Bir.jpg",
+    category: "Gift Package",
+  },
+  {
+    id: 79,
+    name: "Women's Gift Set",
+    price: 200.0,
+    shortDescription:
+      "Includes a saree, bangles, mehendi, flowers, chocolates, garland, and a mirror.",
+    image:
+      "https://i.ibb.co.com/yBmdFwW/Whats-App-Image-2024-02-22-at-01-27-16-07c002fd-2.webp",
+    category: "Gift Package",
+  },
+  {
+    id: 80,
+    name: "Men's Gift Set",
+    price: 200.0,
+    shortDescription:
+      "Includes a formal shirt, wristwatch, wallet, and halal body spray.",
+    image:
+      "https://i.ibb.co.com/NjDWmF2/VEcf-Vn-QAys-Ow-KLf-CBQZq-Gx-IX05-KQno-Ny-Qci-Wjhfm.jpg",
+    category: "Gift Package",
+  },
+  {
+    id: 81,
+    name: "Gift Set",
+    price: 200.0,
+    shortDescription: "Includes a mug, chocolates, tasbih, and a book.",
+    image: "https://i.ibb.co.com/1JW870h/My-Islamic-Gift-House.jpg",
+    category: "Gift Package",
+  },
+  {
+    id: 82,
+    name: "Baby Gift Set",
+    price: 200.0,
+    shortDescription:
+      "Personalized blanket, towel, and soft toy with embroidered names.",
+    image: "https://i.ibb.co.com/hCKQnWx/Personalized-Baby-Gift.jpg",
+    category: "Gift Package",
+  },
+  {
+    id: 83,
+    name: "আকাশের ওপারে আকাশdddd",
+    price: 200.0,
+    shortDescription:
+      "নবিজির জীবনের শিক্ষণীয় ঘটনা এবং মূল্যবোধ সম্পর্কে জানার জন্য একটি অসাধারণ বই।",
+    image:
+      "https://i.ibb.co.com/LkGJ9bf/Lfbzw72-F5aj-T1s-WSf4-Tvg-G7-KBz-S9s3b-CXc-Gt7-Ufk.jpg",
+    category: "Gift Package",
+  },
+  {
+    id: 84,
+    name: "আকাশের ওপারে আকাশ",
+    price: 200.0,
+    shortDescription:
+      "নবিজির জীবনের শিক্ষণীয় ঘটনা এবং মূল্যবোধ সম্পর্কে জানার জন্য একটি অসাধারণ বই।",
+    image:
+      "https://i.ibb.co.com/gDvBBWv/Birthday-Gift-Box-Friend-Gift-Box-Gift-For-Her-Hygge-Box-Warm-and-Cozy-Gift-for-Mom-Personalized-Gif.jpg",
+    category: "Gift Package",
+  },
+  {
+    id: 85,
+    name: "আকাশের ওপারে আকাশ",
+    price: 200.0,
+    shortDescription:
+      "An exceptional book to learn about the inspiring events and moral lessons from the life of the Prophet.",
+    image: "https://i.ibb.co.com/tCgR5pP/image.jpg",
+    category: "Gift Package",
+  },
+  {
+    id: 86,
+    name: "3D tree calendar",
+    price: 200.0,
+    shortDescription:
+      "2025,Desk Calendar With Lights 3D Calendar 2025 Carving Art Notepad DIY Sticky Post Craft Sakura Tree House with Calendar",
+    image: "https://i.ibb.co.com/xznb49D/3-D-tree-calendar-1.jpg",
+    category: "Gift Package",
+  },
+  {
+    id: 88,
+    name: "Tree Desk Calendar 2025",
+    price: 200.0,
+    shortDescription:
+      "Tree Desk Calendar 2025 Calendar Memo Pad Creative Desk Calendar DIY Notes Notepad 3D Art Calendar",
+    image:
+      "https://i.ibb.co.com/mh8RwzL/Tree-Desk-Calendar-2025-Calendar-Memo-Pad-Creative-Desk-Calendar-DIY-Notes-Notepad-3-D-Art-Calendar.jpg",
+    category: "Gift Package",
+  },
+  {
+    id: 89,
+    name: "Harry Potter Memo Pad Reveals",
+    price: 200.0,
+    shortDescription:
+      "Hogwartz magically appears as you tear sheets away from this memo pad.",
+    image: "https://i.ibb.co.com/tCgR5pP/image.jpg",
+    category: "Gift Package",
+  },
+  {
+    id: 90,
+    name: "6 best wall hanging craft",
+    price: 200.0,
+    shortDescription:
+      "6 best wall hanging craft ideas | beautiful wallmate with paper",
+    image:
+      "https://i.ibb.co.com/vkpBdWg/6-best-wall-hanging-craft-ideas-beautiful-wallmate-with-paper.jpg",
+    category: "Gift Package",
+  },
+  {
+    id: 90,
+    name: "Perpetual wall calendar",
+    price: 200.0,
+    shortDescription:
+      "Perpetual wall calendar Wood round perpetual calendar with flowers ",
+    image:
+      "https://i.ibb.co.com/t2NLJyT/Perpetual-wall-calendar-Wood-round-perpetual-calendar-with-flowers-Forever-calendar-floral-print-Per.jpg",
+    category: "Gift Package",
   },
 ];

@@ -1,69 +1,67 @@
 export const topproducts = [
   {
-    id: "1",
-    name: "Old Radio",
-    image: "https://i.ibb.co/Qm5Yh4C/qwjxtox5zqd1upfrljlx.webp",
-    description:
-      "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
-    brand: "Gifter",
-    price: 89.99,
-    countInStock: "",
-    rating: 5,
-    numReviews: 64,
-    category: "Radio",
+    id: 31,
+    name: "Velvet Prayer Mat",
+    price: 34.99,
+    shortDescription: "A soft velvet prayer mat for daily worship.",
+    image:
+      "https://i.ibb.co.com/QdvFsL3/Buy-Personalized-Prayer-Velvet-Quran-Pearl-Prayer-Beads-Islamic-Gift-Set-Eid-Gift-Wedding-Favors-Bir.jpg",
+    category: "Wedding Gifts",
+  },
+  {
+    id: 59,
+    name: "আর রাহিকুল মাখতুম",
+    price: 120.0,
+    shortDescription:
+      "পুরস্কারপ্রাপ্ত এই গ্রন্থে নবিজির জীবনী এমনভাবে উপস্থাপন করা হয়েছে, যা পাঠকের অন্তরে গভীর প্রভাব ফেলে।",
+    image: "https://i.ibb.co/NFCfyws/The-Sealed-Nectar.jpg",
+    category: "Books",
   },
 
   {
-    id: "3",
-    name: "Washi Tape - Girlie Pink Theme",
-    image: "https://i.ibb.co/r4ZWnn1/fovcima3uv5ydu86x45x.webp",
-    description:
-      "Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design",
-    brand: "Cannon",
-    price: 929.99,
-    countInStock: "",
-    rating: 3.4,
-    numReviews: 32,
-    category: "Tape",
+    id: 63,
+    name: "Zara Abaya",
+    price: 49.99,
+    shortDescription: "A classic black abaya for a modest yet modern look.",
+    image: "https://i.ibb.co.com/cXvMs4t/Lebeni-Cape-Designs.jpg",
+    category: "Clothing",
   },
   {
-    id: "4",
-    name: "Two Color Ice Cream",
-    image: "https://i.ibb.co/zHJhfHr/dhdja21tfr0vrdhebgf9.webp",
-    description:
-      "The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music",
-    brand: "Sony",
-    price: 399.99,
-    countInStock: "",
-    rating: 4.3,
-    numReviews: 52,
-    category: "Ice Cream",
+    id: 54,
+    name: "Zahra Lipstick",
+    price: 9.99,
+    shortDescription: "A vibrant lipstick for any occasion.",
+    image:
+      "https://i.ibb.co.com/99kDTsf/Custom-Lipstick-with-Name-Engraving-Love-Locker-Series-Natural-Organic-Personalized-Gifts-Bridesmaid.jpg",
+    category: "Cosmetics",
   },
 
   {
-    id: "5",
-    name: "Note Book",
-    image: "https://i.ibb.co/fdms4db/gp9kp8dxxsn5354010te.webp",
-    description:
-      "Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design",
-    brand: "Cannon",
-    price: 929.99,
-    countInStock: "",
-    rating: 3.4,
-    numReviews: 32,
-    category: "note",
+    id: 29,
+    name: "Custom Quran Stand",
+    price: 49.99,
+    shortDescription: "A handcrafted Quran stand with intricate designs.",
+    image: "https://i.ibb.co.com/WVpt9P4/8.jpg",
+    category: "Wedding Gifts",
   },
   {
-    id: "2",
-    name: "Umrah Mubarak Mug - Italic",
-    image: "https://i.ibb.co/c823NF3/fwi9exhq2h2qokcahe7g.webp",
-    description:
-      "Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life",
-    brand: "Wafi",
-    category: "Mug",
-    price: 599.99,
-    countInStock: "",
-    rating: 4.7,
-    numReviews: 120,
+    id: 79,
+    name: "Women's Gift Set",
+    price: 200.0,
+    shortDescription:
+      "Includes a saree, bangles, mehendi, flowers, chocolates, garland, and a mirror.",
+    image:
+      "https://i.ibb.co.com/yBmdFwW/Whats-App-Image-2024-02-22-at-01-27-16-07c002fd-2.webp",
+    category: "Gift Package",
+  },
+  {
+    id: 90,
+    name: "Perpetual wall calendar",
+    price: 200.0,
+    shortDescription:
+      "Perpetual wall calendar Wood round perpetual calendar with flowers ",
+    image:
+      "https://i.ibb.co.com/t2NLJyT/Perpetual-wall-calendar-Wood-round-perpetual-calendar-with-flowers-Forever-calendar-floral-print-Per.jpg",
+    category: "Gift Package",
   },
 ];
