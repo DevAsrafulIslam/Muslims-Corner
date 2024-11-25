@@ -46,7 +46,7 @@ const ProductDetailsPage = ({ params: { id } }: Props) => {
             <span className="flex items-center mb-4 space-x-4">
               <h2 className="text-2xl">${product.price}</h2>
               <h2>
-                {product.countInStock > 0 ? (
+                {product.countInStock ? (
                   <span className="bg-green-200 rounded-xl px-2">
                     In Stock ({product.countInStock})
                   </span>
