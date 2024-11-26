@@ -8,14 +8,6 @@ export const categories = [
     category: "Home & Kitchen",
   },
   {
-    id: 51,
-    name: "Baraka Cutting Board",
-    price: 14.99,
-    shortDescription: "A durable bamboo cutting board with a sleek design.",
-    image: "https://example.com/images/baraka-cutting-board.jpg",
-    category: "Home & Kitchen",
-  },
-  {
     id: 52,
     name: "Rehana Serving Tray",
     price: 24.99,
@@ -33,15 +25,6 @@ export const categories = [
     category: "Home & Kitchen",
   },
   {
-    id: 2,
-    name: "Afiya Cosmetic Set",
-    price: 29.99,
-    shortDescription:
-      "A premium cosmetic set named after 'well-being' and beauty.",
-    image: "https://example.com/images/afiya-cosmetic-set.jpg",
-    category: "Cosmetics",
-  },
-  {
     id: 54,
     name: "Zahra Lipstick",
     price: 9.99,
@@ -50,23 +33,6 @@ export const categories = [
       "https://i.ibb.co.com/99kDTsf/Custom-Lipstick-with-Name-Engraving-Love-Locker-Series-Natural-Organic-Personalized-Gifts-Bridesmaid.jpg",
     category: "Cosmetics",
   },
-  {
-    id: 55,
-    name: "Jameela Eyeshadow Palette",
-    price: 19.99,
-    shortDescription: "A palette featuring bold and neutral colors.",
-    image: "https://example.com/images/jameela-eyeshadow-palette.jpg",
-    category: "Cosmetics",
-  },
-  {
-    id: 56,
-    name: "Iman Foundation",
-    price: 24.99,
-    shortDescription: "A lightweight foundation for a flawless look.",
-    image: "https://example.com/images/iman-foundation.jpg",
-    category: "Cosmetics",
-  },
-
   {
     id: 3,
     name: "নামাজে মন ফেরানো",
@@ -211,37 +177,12 @@ export const categories = [
     image: "https://i.ibb.co.com/7kxfytz/image.jpg",
     category: "Books",
   },
-
-  {
-    id: 4,
-    name: "Barakah Showpiece",
-    price: 34.99,
-    shortDescription: "A decorative piece bringing 'blessings' to any space.",
-    image: "https://example.com/images/barakah-showpiece.jpg",
-    category: "Decor",
-  },
   {
     id: 60,
     name: "Salah Calligraphy Frame",
     price: 49.99,
     shortDescription: "A framed artwork of elegant Arabic calligraphy.",
     image: "https://i.ibb.co.com/HBpdt3Y/5.jpg",
-    category: "Decor",
-  },
-  {
-    id: 61,
-    name: "Peaceful Lantern",
-    price: 39.99,
-    shortDescription: "A decorative lantern to light up your evenings.",
-    image: "https://example.com/images/peaceful-lantern.jpg",
-    category: "Decor",
-  },
-  {
-    id: 62,
-    name: "Zikr Wall Hanging",
-    price: 29.99,
-    shortDescription: "A wall hanging adorned with Quranic verses.",
-    image: "https://example.com/images/zikr-wall-hanging.jpg",
     category: "Decor",
   },
   {
@@ -305,14 +246,6 @@ export const categories = [
     category: "Wedding Gifts",
   },
   {
-    id: 27,
-    name: "Silk Bedsheet Set",
-    price: 89.99,
-    shortDescription: "A premium silk bedsheet set for comfort and elegance.",
-    image: "https://example.com/images/silk-bedsheet.jpg",
-    category: "Wedding Gifts",
-  },
-  {
     id: 28,
     name: "Golden Tea Set",
     price: 79.99,
@@ -347,43 +280,32 @@ export const categories = [
     category: "Wedding Gifts",
   },
   {
+    id: 36,
+    name: "Relógio 16 Ultra",
+    price: 299.99,
+    shortDescription:
+      "The Smartwatch 8 Ultra tracks health, answers calls, lasts 12 days, and locates loved ones—functionality meets value.",
+    image:
+      "https://i.ibb.co.com/LNQYd4M/Relo-gio-Smartwatch-Iwo16-Ultra-Se-rie-8-Tela-2-02-Preto-1-Unidade.jpg",
+    category: "Wedding Gifts",
+  },
+  {
     id: 32,
-    name: "Customized Name Plate",
-    price: 44.99,
-    shortDescription: "A personalized name plate for the newlyweds' home.",
-    image: "https://example.com/images/name-plate.jpg",
+    name: "RIVERSONG Smart Watch ",
+    price: 299.99,
+    shortDescription:
+      "PRICES MAY VARY. This smartwatch tracks 8 sports modes, steps, calories, heart rate, and more, helping you stay active and monitor your health.",
+    image:
+      "https://i.ibb.co.com/WDYnkBQ/RIVERSONG-Smart-Watch-for-Android-Phones-and-i-Phone-Compatible-Smartwatch-for-Men-Women-IP68-Waterp.jpg",
     category: "Wedding Gifts",
   },
   {
     id: 33,
-    name: "Decorative Lantern Set",
-    price: 64.99,
-    shortDescription: "A set of decorative lanterns for ambient lighting.",
-    image: "https://example.com/images/lantern-set.jpg",
-    category: "Wedding Gifts",
-  },
-  {
-    id: 34,
-    name: "Wedding Planner Journal",
-    price: 24.99,
-    shortDescription: "A detailed planner for organizing the perfect wedding.",
-    image: "https://example.com/images/wedding-planner.jpg",
-    category: "Wedding Gifts",
-  },
-  {
-    id: 35,
-    name: "Handmade Jewelry Box",
-    price: 39.99,
-    shortDescription: "A unique box for storing precious jewelry.",
-    image: "https://example.com/images/jewelry-box.jpg",
-    category: "Wedding Gifts",
-  },
-  {
-    id: 36,
-    name: "Luxury Watch Pair",
+    name: "Women Jewellery Design Artificial",
     price: 299.99,
-    shortDescription: "A set of matching watches for him and her.",
-    image: "https://example.com/images/luxury-watches.jpg",
+    shortDescription:
+      "PRICES MAY VARY. Smartwatch tracks 8 sports modes, steps, calories, heart rate, and more to keep you healthy and active.",
+    image: "https://i.ibb.co.com/3yR3cxq/Women-Jewellery-Design-Artificial.jpg",
     category: "Wedding Gifts",
   },
   {
@@ -392,31 +314,6 @@ export const categories = [
     price: 69.99,
     shortDescription: "A Quran with the couple's names beautifully embossed.",
     image: "https://i.ibb.co.com/wJJM2vS/3.jpg",
-    category: "Wedding Gifts",
-  },
-  {
-    id: 38,
-    name: "Marriage Dua Wall Art",
-    price: 54.99,
-    shortDescription: "A wall hanging with a marriage blessing dua.",
-    image: "https://example.com/images/marriage-dua.jpg",
-    category: "Wedding Gifts",
-  },
-  {
-    id: 39,
-    name: "Couple's Bathrobe Set",
-    price: 74.99,
-    shortDescription: "Matching bathrobes for the newlyweds.",
-    image: "https://example.com/images/bathrobe-set.jpg",
-    category: "Wedding Gifts",
-  },
-
-  {
-    id: 41,
-    name: "Custom Engraved Rings",
-    price: 199.99,
-    shortDescription: "Matching rings with custom engraving for the couple.",
-    image: "https://example.com/images/engraved-rings.jpg",
     category: "Wedding Gifts",
   },
   {
@@ -550,5 +447,25 @@ export const categories = [
     image:
       "https://i.ibb.co.com/t2NLJyT/Perpetual-wall-calendar-Wood-round-perpetual-calendar-with-flowers-Forever-calendar-floral-print-Per.jpg",
     category: "Gift Package",
+  },
+  {
+    id: 90,
+    name: "Heritage Mug",
+    price: 200.0,
+    shortDescription:
+      "A patriotic Victory Day mug celebrating December 16, 1971, perfect for daily use or as a keepsake.",
+    image:
+      "https://i.ibb.co.com/kyjDnx9/130243765-400401694717592-1543326048658113043-n.jpg",
+    category: "Victory Day",
+  },
+  {
+    id: 90,
+    name: "Victory Spirit",
+    price: 200.0,
+    shortDescription:
+      "A Victory Day t-shirt commemorates December 16, 1971, with patriotic designs celebrating freedom and unity.",
+    image:
+      "https://i.ibb.co.com/p3YQgKN/e453e840-c00b-11ec-aded-2bd2c4f56c95.png",
+    category: "Victory Day",
   },
 ];
