@@ -4,7 +4,7 @@ import Categories from "../categoris/page";
 
 const Menu = () => {
   return (
-    <div className="container">
+    <div>
       <Categories />
     </div>
   );
