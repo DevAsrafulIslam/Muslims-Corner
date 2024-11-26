@@ -19,7 +19,7 @@ const Products = () => {
               >
                 <Link
                   href={{ pathname: `/products/${product.id}` }}
-                  className="relative aspect-square block"
+                  className="relative block"
                 >
                   <img
                     src={product.image}
