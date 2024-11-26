@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/select";
 import { categories } from "@/data/categories";
 import React, { useState } from "react";
-import { TryOn } from "../try-on/page";
+import TryOn from "../try-on/page";
 
 const Categories = () => {
   // State to track the selected category

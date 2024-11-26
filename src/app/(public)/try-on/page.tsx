@@ -1,6 +1,6 @@
 import React from "react";
 
-export const TryOn = () => {
+const TryOn = () => {
   return (
     <div>
       <a
@@ -13,3 +13,4 @@ export const TryOn = () => {
     </div>
   );
 };
+export default TryOn;
