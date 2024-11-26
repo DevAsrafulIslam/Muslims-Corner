@@ -39,7 +39,7 @@ const Categories = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="container">
       <h1 className="text-3xl text-center mt-4 text-[#00000098]">Categories</h1>
 
       {/* Category filter dropdown */}
