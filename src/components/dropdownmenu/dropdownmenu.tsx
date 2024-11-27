@@ -36,24 +36,26 @@ export function DropdownMenubar() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <DropdownMenuSeparator />
-        <DropdownMenuItem>
-          <Link href="/">Home</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Link href="/menu">Menu</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Link href="/about">About</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Link href="/recycle">Recycle</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Link href="/login">Login</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Link href="/register">Register</Link>
-        </DropdownMenuItem>
+        <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
+          <Link href="/">
+            <DropdownMenuItem>Home</DropdownMenuItem>
+          </Link>
+          <Link href="/menu">
+            <DropdownMenuItem>Menu</DropdownMenuItem>
+          </Link>
+          <Link href="/about">
+            <DropdownMenuItem>About</DropdownMenuItem>
+          </Link>
+          <Link href="/recycle">
+            <DropdownMenuItem>Recycle</DropdownMenuItem>
+          </Link>
+          <Link href="/login">
+            <DropdownMenuItem>Login</DropdownMenuItem>
+          </Link>
+          <Link href="/register">
+            <DropdownMenuItem>Register</DropdownMenuItem>
+          </Link>
+        </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
   );

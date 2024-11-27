@@ -1,85 +1,52 @@
-import React from "react";
-import { Metadata } from "next";
+import { SuggestedProductsPage } from "@/components/suggetion/page";
 import { products } from "@/data/product";
-import Image from "next/image";
 
-type Props = {
-  params: { id: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
+const ProductPage = ({ params }: { params: { id: string } }) => {
+  console.log("Product ID from params:", params.id); // params.id লগ করুন
 
-export async function generateMetadata({
-  params: { id },
-}: Props): Promise<Metadata> {
-  const product = products.find((product) => product.id === Number(id)); // Convert id to a number
-  return {
-    title: product?.name || "Product not found",
-    description: product?.shortDescription || "No description available",
-    openGraph: {
-      images: product ? [product.image as string] : [],
-    },
-  };
-}
+  const product = products.find((p) => p.id === Number(params.id));
 
-const ProductDetailsPage = ({ params: { id } }: Props) => {
-  const product = products.find((product) => product.id === Number(id)); // Convert id to a number
+  console.log("Found Product:", product); // পণ্যটি সঠিকভাবে পাওয়া যাচ্ছে কিনা তা লগ করুন
 
   if (!product) {
-    return <div className="container">Product not found</div>;
+    return <div>Product not found!</div>;
   }
 
   return (
-    <div className="container">
-      <div className="grid gap-14 md:grid-cols-2 space-x-4 justify-between my-12">
-        <Image
-          src={product.image}
-          alt={product.name}
-          width={500}
-          height={500}
-        />
+    <div className="container mx-auto p-4">
+      <div className="flex flex-col items-center justify-around md:flex-row md:items-start md:gap-6">
         <div>
-          <div className="flex flex-col">
-            <h4 className="uppercase text-2xl">{product.name}</h4>
-            <span className="divider"></span>
-          </div>
-          <div>
-            <span className="flex items-center mb-4 space-x-4">
-              <h2 className="text-2xl">${product.price}</h2>
-              <h2>
-                {product.countInStock ? (
-                  <span className="bg-green-200 rounded-xl px-2">
-                    In Stock ({product.countInStock})
-                  </span>
-                ) : (
-                  <span className="bg-red-200 rounded-xl px-2">
-                    Out of Stock
-                  </span>
-                )}
-              </h2>
-            </span>
-            <p>
-              {product.shortDescription || "No detailed description provided."}
-            </p>
-            <div className="grid gap-4 grid-cols-1 md:grid-cols-2 mt-5 items-center self-center">
-              <div className="flex items-center space-x-2 justify-around md:justify-between">
-                <h4 className="font-bold">Quantity</h4>
-                <input
-                  className="border-2 rounded outline-none w-20 py-2 px-2"
-                  type="number"
-                  defaultValue={1}
-                  min={1}
-                  max={product.countInStock}
-                />
-              </div>
-              <button className="text-white py-2 px-7 mt-0 rounded-md bg-purple-900">
-                Add to Cart
-              </button>
-            </div>
+          <img
+            src={product.image}
+            alt={product.name}
+            className="max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full h-auto rounded-md mb-4 md:mb-0"
+          />
+        </div>
+        <div className="text-center md:text-left">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+            {product.name}
+          </h1>
+          <p className="text-xl md:text-2xl max-w-md lg:text-xl mt-4">
+            {product.shortDescription}
+          </p>
+          <p className="text-xl md:text-2xl lg:text-3xl font-semibold mt-4">
+            ৳{product.price}
+          </p>
+          <div className="flex space-x-2 my-4">
+            <button className="text-white bg-orange-300 px-4 py-2 rounded">
+              Add Cart
+            </button>
+            <button className="text-white bg-slate-600 px-4 py-2 rounded">
+              Buy Now
+            </button>
           </div>
         </div>
+      </div>
+      <div className="px-4 my-4 w-11/12 mx-auto">
+        <SuggestedProductsPage />
       </div>
     </div>
   );
 };
 
-export default ProductDetailsPage;
+export default ProductPage;
