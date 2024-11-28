@@ -21,7 +21,7 @@ export const Header = () => {
     <header className="flex justify-between mt-2 animate__animated animate__zoomIn navbar container bg-base-100">
       <DropdownMenubar />
       {/* <a className="text-xl md:text-3xl font-bold">𝘔𝘶𝘴𝘭𝘪𝘮𝘴 𝘊𝘰𝘳𝘯𝘦𝘳</a> */}
-      <a className="text-xl md:text-3xl font-bold">𓆩𝖦𝗂𝖿𝗍𝗂𝖿𝗒𓆪</a>
+      <a className="text-xl md:text-3xl font-bold">𓆩𝙂𝙞𝙛𝙩𝙡𝙮𓆪</a>
       <NavMenu />
       <Mood />
     </header>
