@@ -282,7 +282,7 @@ export const categories = [
   {
     id: 36,
     name: "Relógio 16 Ultra",
-    price: 299.99,
+    price: 229.99,
     shortDescription:
       "The Smartwatch 8 Ultra tracks health, answers calls, lasts 12 days, and locates loved ones—functionality meets value.",
     image:
@@ -292,7 +292,7 @@ export const categories = [
   {
     id: 32,
     name: "RIVERSONG Smart Watch ",
-    price: 299.99,
+    price: 295.99,
     shortDescription:
       "PRICES MAY VARY. This smartwatch tracks 8 sports modes, steps, calories, heart rate, and more, helping you stay active and monitor your health.",
     image:
@@ -302,7 +302,7 @@ export const categories = [
   {
     id: 33,
     name: "Women Jewellery Design Artificial",
-    price: 299.99,
+    price: 653,
     shortDescription:
       "PRICES MAY VARY. Smartwatch tracks 8 sports modes, steps, calories, heart rate, and more to keep you healthy and active.",
     image: "https://i.ibb.co.com/3yR3cxq/Women-Jewellery-Design-Artificial.jpg",
@@ -337,7 +337,7 @@ export const categories = [
   {
     id: 79,
     name: "Women's Gift Set",
-    price: 200.0,
+    price: 830.0,
     shortDescription:
       "Includes a saree, bangles, mehendi, flowers, chocolates, garland, and a mirror.",
     image:
@@ -347,9 +347,9 @@ export const categories = [
   {
     id: 80,
     name: "Men's Gift Set",
-    price: 200.0,
+    price: 1999.0,
     shortDescription:
-      "Includes a formal shirt, wristwatch, wallet, and halal body spray.",
+      "Includes a panjabi, wristwatch, wallet, choklet and halal body spray.",
     image:
       "https://i.ibb.co.com/NjDWmF2/VEcf-Vn-QAys-Ow-KLf-CBQZq-Gx-IX05-KQno-Ny-Qci-Wjhfm.jpg",
     category: "Gift Package",
@@ -357,7 +357,7 @@ export const categories = [
   {
     id: 81,
     name: "Gift Set",
-    price: 200.0,
+    price: 2500.0,
     shortDescription: "Includes a mug, chocolates, tasbih, and a book.",
     image: "https://i.ibb.co.com/1JW870h/My-Islamic-Gift-House.jpg",
     category: "Gift Package",
@@ -365,7 +365,7 @@ export const categories = [
   {
     id: 82,
     name: "Baby Gift Set",
-    price: 200.0,
+    price: 290.0,
     shortDescription:
       "Personalized blanket, towel, and soft toy with embroidered names.",
     image: "https://i.ibb.co.com/hCKQnWx/Personalized-Baby-Gift.jpg",
@@ -373,20 +373,20 @@ export const categories = [
   },
   {
     id: 83,
-    name: "আকাশের ওপারে আকাশdddd",
-    price: 200.0,
+    name: "Men's Gift Set",
+    price: 750.0,
     shortDescription:
-      "নবিজির জীবনের শিক্ষণীয় ঘটনা এবং মূল্যবোধ সম্পর্কে জানার জন্য একটি অসাধারণ বই।",
+      "Includes a panjabi, watch, wallet, and halal body spray.",
     image:
       "https://i.ibb.co.com/LkGJ9bf/Lfbzw72-F5aj-T1s-WSf4-Tvg-G7-KBz-S9s3b-CXc-Gt7-Ufk.jpg",
     category: "Gift Package",
   },
   {
     id: 84,
-    name: "আকাশের ওপারে আকাশ",
-    price: 200.0,
+    name: "Cozy Bliss Gift Box",
+    price: 2000.0,
     shortDescription:
-      "নবিজির জীবনের শিক্ষণীয় ঘটনা এবং মূল্যবোধ সম্পর্কে জানার জন্য একটি অসাধারণ বই।",
+      "A curated box with a soft blanket, tea, mug, notebook, gua sha, hair clip, candle, and matches for ultimate comfort.",
     image:
       "https://i.ibb.co.com/gDvBBWv/Birthday-Gift-Box-Friend-Gift-Box-Gift-For-Her-Hygge-Box-Warm-and-Cozy-Gift-for-Mom-Personalized-Gif.jpg",
     category: "Gift Package",
@@ -394,7 +394,7 @@ export const categories = [
   {
     id: 85,
     name: "আকাশের ওপারে আকাশ",
-    price: 200.0,
+    price: 180.0,
     shortDescription:
       "An exceptional book to learn about the inspiring events and moral lessons from the life of the Prophet.",
     image: "https://i.ibb.co.com/tCgR5pP/image.jpg",
@@ -403,7 +403,7 @@ export const categories = [
   {
     id: 86,
     name: "3D tree calendar",
-    price: 200.0,
+    price: 260.0,
     shortDescription:
       "2025,Desk Calendar With Lights 3D Calendar 2025 Carving Art Notepad DIY Sticky Post Craft Sakura Tree House with Calendar",
     image: "https://i.ibb.co.com/xznb49D/3-D-tree-calendar-1.jpg",
@@ -420,18 +420,9 @@ export const categories = [
     category: "Gift Package",
   },
   {
-    id: 89,
-    name: "Harry Potter Memo Pad Reveals",
-    price: 200.0,
-    shortDescription:
-      "Hogwartz magically appears as you tear sheets away from this memo pad.",
-    image: "https://i.ibb.co.com/tCgR5pP/image.jpg",
-    category: "Gift Package",
-  },
-  {
     id: 90,
     name: "6 best wall hanging craft",
-    price: 200.0,
+    price: 135.0,
     shortDescription:
       "6 best wall hanging craft ideas | beautiful wallmate with paper",
     image:
@@ -441,7 +432,7 @@ export const categories = [
   {
     id: 90,
     name: "Perpetual wall calendar",
-    price: 200.0,
+    price: 290.0,
     shortDescription:
       "Perpetual wall calendar Wood round perpetual calendar with flowers ",
     image:
@@ -461,7 +452,7 @@ export const categories = [
   {
     id: 90,
     name: "Victory Spirit",
-    price: 200.0,
+    price: 270.0,
     shortDescription:
       "A Victory Day t-shirt commemorates December 16, 1971, with patriotic designs celebrating freedom and unity.",
     image:
