@@ -21,34 +21,34 @@ export function NavMenu() {
     <Menubar className="border-none md:flex hidden">
       <DropdownMenu />
       <MenubarMenu>
-        <MenubarTrigger>
-          <Link href="/">Home</Link>
-        </MenubarTrigger>
+        <Link href="/">
+          <MenubarTrigger>Home</MenubarTrigger>
+        </Link>
       </MenubarMenu>
       <MenubarMenu>
-        <MenubarTrigger>
-          <Link href="/menu">Menu</Link>
-        </MenubarTrigger>
+        <Link href="/menu">
+          <MenubarTrigger>Menu</MenubarTrigger>
+        </Link>
       </MenubarMenu>
       <MenubarMenu>
-        <MenubarTrigger>
-          <Link href="/about">About</Link>
-        </MenubarTrigger>
+        <Link href="/about">
+          <MenubarTrigger>About</MenubarTrigger>
+        </Link>
       </MenubarMenu>
       <MenubarMenu>
-        <MenubarTrigger>
-          <Link href="/recycle">Recycle</Link>
-        </MenubarTrigger>
+        <Link href="/recycle">
+          <MenubarTrigger>Recycle</MenubarTrigger>
+        </Link>
       </MenubarMenu>
       <MenubarMenu>
-        <MenubarTrigger>
-          <Link href="/login">Login</Link>
-        </MenubarTrigger>
+        <Link href="/login">
+          <MenubarTrigger>Login</MenubarTrigger>
+        </Link>
       </MenubarMenu>
       <MenubarMenu>
-        <MenubarTrigger>
-          <Link href="/register">Register</Link>
-        </MenubarTrigger>
+        <Link href="/register">
+          <MenubarTrigger>Register</MenubarTrigger>
+        </Link>
       </MenubarMenu>
     </Menubar>
   );
