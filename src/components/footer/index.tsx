@@ -25,7 +25,7 @@ export const Footer = () => {
               </div>
               <div className="space-y-1 bg-gray-600 py-4 px-3 xl:p-0 xl:bg-transparent rounded xl:rounded-none w-full sm:w-[calc(100%/2-10px)] lg:w-[calc(100%/4-12px)] xl:w-[calc(100%/2-30px-1px)]">
                 <p className="uppercase text-xs text-gray-400">OUR LOCATION</p>
-                <p className="text-sm">715 Fake Street, New York 10021 USA</p>
+                <p className="text-sm">Dhaka, Bangladesh</p>
               </div>
 
               <div className="space-y-1 bg-gray-600 py-4 px-3 xl:p-0 xl:bg-transparent rounded xl:rounded-none w-full sm:w-[calc(100%/2-10px)] lg:w-[calc(100%/4-12px)] xl:w-[calc(100%/2-30px-1px)]">
