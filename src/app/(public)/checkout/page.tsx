@@ -1,15 +1,25 @@
 "use client";
 
-import { useCart } from "@/context/CartContext";
+import { useCart, CartItem } from "@/context/CartContext";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useState, FormEvent, ChangeEvent } from "react";
 import { FiTrash2, FiMinus, FiPlus } from "react-icons/fi";
 import Link from "next/link";
 
-const CheckoutPage = () => {
+interface FormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  address: string;
+  city: string;
+  postalCode: string;
+  phone: string;
+}
+
+const CheckoutPage: React.FC = () => {
   const { cart, removeFromCart, updateQuantity, getTotalPrice, clearCart } = useCart();
   const router = useRouter();
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     firstName: "",
     lastName: "",
     email: "",
@@ -19,7 +29,7 @@ const CheckoutPage = () => {
     phone: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -27,7 +37,7 @@ const CheckoutPage = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     // Here you would typically process the order
     // For now, we'll just simulate a successful order

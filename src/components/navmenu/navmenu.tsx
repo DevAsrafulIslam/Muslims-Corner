@@ -22,11 +22,7 @@ export function NavMenu() {
           <MenubarTrigger>Menu</MenubarTrigger>
         </Link>
       </MenubarMenu>
-      <MenubarMenu>
-        <Link href="/about">
-          <MenubarTrigger>About</MenubarTrigger>
-        </Link>
-      </MenubarMenu>
+     
       <MenubarMenu>
         <Link href="/login">
           <MenubarTrigger>Login</MenubarTrigger>

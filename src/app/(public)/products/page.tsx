@@ -4,21 +4,20 @@ import { products } from "@/data/product";
 import Link from "next/link";
 import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
-import { useCart } from "@/context/CartContext";
+import { useCart, Product } from "@/context/CartContext";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
-import Image from "next/image";
 
 const Products = () => {
   const { addToCart } = useCart();
   const router = useRouter();
 
-  const handleAddToCart = (product) => {
+  const handleAddToCart = (product: Product) => {
     addToCart(product);
     toast.success(`${product.name} added to cart!`);
   };
 
-  const handleBuyNow = (product) => {
+  const handleBuyNow = (product: Product) => {
     addToCart(product);
     router.push("/checkout");
   };
@@ -40,7 +39,7 @@ const Products = () => {
                   href={{ pathname: `/products/${product.id}` }}
                   className="relative block"
                 >
-                  <Image
+                  <img
                     src={product.image}
                     alt={product.name}
                     className="w-full h-52 object-cover rounded-t-md"

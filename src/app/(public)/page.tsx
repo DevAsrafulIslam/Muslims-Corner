@@ -1,5 +1,4 @@
 import { Header } from "@/components/header";
-import Image from "next/image";
 import Products from "./products/page";
 import Carousel from "@/components/carousel/carousel";
 import HomeScreen from "./screens/topproducts";
