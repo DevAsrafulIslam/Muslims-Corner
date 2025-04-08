@@ -1,16 +1,8 @@
 import {
   Menubar,
-  MenubarCheckboxItem,
-  MenubarContent,
-  MenubarItem,
+  
   MenubarMenu,
-  MenubarRadioGroup,
-  MenubarRadioItem,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarSub,
-  MenubarSubContent,
-  MenubarSubTrigger,
+ 
   MenubarTrigger,
 } from "@/components/ui/menubar";
 import { DropdownMenu } from "../ui/dropdown-menu";
@@ -33,11 +25,6 @@ export function NavMenu() {
       <MenubarMenu>
         <Link href="/about">
           <MenubarTrigger>About</MenubarTrigger>
-        </Link>
-      </MenubarMenu>
-      <MenubarMenu>
-        <Link href="/recycle">
-          <MenubarTrigger>Recycle</MenubarTrigger>
         </Link>
       </MenubarMenu>
       <MenubarMenu>
