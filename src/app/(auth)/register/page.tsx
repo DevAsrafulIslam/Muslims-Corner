@@ -34,7 +34,7 @@ const Register = () => {
           
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-gray-800 mb-2">Create Account</h1>
-            <p className="text-gray-600">Join the Muslim's Corner community</p>
+            <p className="text-gray-600">Join the Muslis Corner community</p>
           </div>
           
           <form onSubmit={handleSubmit} className="space-y-6">
