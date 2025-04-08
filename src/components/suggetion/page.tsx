@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { products } from "@/data/product";
 import Link from "next/link";
+import Image from "next/image";
 
 export function SuggestedProductsPage() {
   return (
@@ -27,7 +28,7 @@ export function SuggestedProductsPage() {
                     href={{ pathname: `/products/${product.id}` }}
                     className="relative block"
                   >
-                    <img
+                    <Image
                       src={product.image}
                       alt={product.name}
                       className="w-full h-24 object-cover rounded-md mb-2"

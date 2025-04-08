@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const AboutPage = () => {
@@ -70,7 +71,7 @@ const AboutPage = () => {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
             <div className="bg-white rounded-lg shadow-md p-4 text-center">
-              <img
+              <Image
                 src="/team-member1.jpg"
                 alt="Team Member"
                 className="w-24 h-24 mx-auto rounded-full mb-4"

@@ -10,6 +10,7 @@ import {
 import { categories } from "@/data/categories";
 import React, { useState } from "react";
 import TryOn from "../try-on/page";
+import Image from "next/image";
 
 const Categories = () => {
   // State to track the selected category
@@ -78,7 +79,7 @@ const Categories = () => {
             key={item.id}
             className="border border-dashed rounded-md hover:shadow-md"
           >
-            <img
+            <Image
               src={item.image}
               alt={item.name}
               className="w-full h-40 object-cover rounded-md mb-4"

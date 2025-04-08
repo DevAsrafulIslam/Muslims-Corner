@@ -21,7 +21,7 @@ const TopProducts = () => {
                 href={{ pathname: `/products/${topproduct.id}` }}
                 className="relative block"
               >
-                <img
+                <Image
                   src={topproduct.image}
                   alt={topproduct.name}
                   className="w-full h-52 object-cover rounded-t-md"

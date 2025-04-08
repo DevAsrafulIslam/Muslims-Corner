@@ -7,6 +7,7 @@ import { FaCartShopping } from "react-icons/fa6";
 import { useCart } from "@/context/CartContext";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
+import Image from "next/image";
 
 const Products = () => {
   const { addToCart } = useCart();
@@ -39,7 +40,7 @@ const Products = () => {
                   href={{ pathname: `/products/${product.id}` }}
                   className="relative block"
                 >
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.name}
                     className="w-full h-52 object-cover rounded-t-md"

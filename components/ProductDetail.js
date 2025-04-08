@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { useCart } from '../context/CartContext';
+import Image from 'next/image';
 
 const ProductDetail = ({ product }) => {
     const [quantity, setQuantity] = useState(1);
@@ -21,7 +22,7 @@ const ProductDetail = ({ product }) => {
     return (
         <div className="product-detail">
             <div className="product-image">
-                <img src={product.image} alt={product.name} />
+                <Image src={product.image} alt={product.name} />
             </div>
             <div className="product-info">
                 <h1>{product.name}</h1>

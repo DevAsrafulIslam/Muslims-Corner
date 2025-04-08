@@ -93,16 +93,16 @@ const Register = () => {
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <FiLock className="h-5 w-5 text-gray-400" />
                 </div>
-                <Input 
-                  id="confirmPassword" 
-                  type="password" 
-                  placeholder="Confirm your password" 
+                <Input
+                  id="confirmPassword"
+                  type="password"
+                  placeholder="Confirm your password"
                   className="pl-10 bg-white border-gray-300 focus:border-green-500 focus:ring-green-500"
                   required
                 />
               </div>
             </div>
-            
+
             <div className="flex items-center">
               <input
                 id="terms"
@@ -122,9 +122,9 @@ const Register = () => {
                 </Link>
               </label>
             </div>
-            
-            <Button 
-              type="submit" 
+
+            <Button
+              type="submit"
               className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition-colors"
               disabled={isLoading}
             >
@@ -141,7 +141,7 @@ const Register = () => {
               )}
             </Button>
           </form>
-          
+
           <div className="mt-6">
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
@@ -153,7 +153,7 @@ const Register = () => {
                 </span>
               </div>
             </div>
-            
+
             <div className="mt-6 grid grid-cols-2 gap-3">
               <button
                 type="button"
@@ -171,7 +171,7 @@ const Register = () => {
               </button>
             </div>
           </div>
-          
+
           <p className="mt-8 text-center text-sm text-gray-600">
             Already have an account?{' '}
             <Link href="/login" className="font-medium text-green-600 hover:text-green-500">
@@ -180,7 +180,7 @@ const Register = () => {
           </p>
         </div>
       </div>
-      
+
       {/* Right side - Image/Banner */}
       <div className="hidden md:block md:w-1/2 bg-green-600 relative overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>

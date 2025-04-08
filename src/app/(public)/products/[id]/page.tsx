@@ -1,5 +1,6 @@
 import { SuggestedProductsPage } from "@/components/suggetion/page";
 import { products } from "@/data/product";
+import Image from "next/image";
 
 const ProductPage = ({ params }: { params: { id: string } }) => {
   console.log("Product ID from params:", params.id); // params.id লগ করুন
@@ -16,7 +17,7 @@ const ProductPage = ({ params }: { params: { id: string } }) => {
     <div className="container mx-auto p-4">
       <div className="flex flex-col items-center justify-around md:flex-row md:items-start md:gap-6">
         <div>
-          <img
+          <Image
             src={product.image}
             alt={product.name}
             className="max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full h-auto rounded-md mb-4 md:mb-0"
