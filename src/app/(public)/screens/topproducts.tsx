@@ -55,9 +55,7 @@ const TopProducts: React.FC<TopProductsProps> = ({ onAddToCart, onBuyNow }) => {
                   <p className="text-primary font-bold">
                     ৳<span className="text-2xl">{topproduct.price}</span>
                   </p>
-                  {topproduct.oldPrice !== undefined && topproduct.oldPrice > 0 && (
-                    <p className="text-gray-400 line-through text-sm">৳{topproduct.oldPrice}</p>
-                  )}
+
                 </div>
                 <div className="flex space-x-2">
                   <button
