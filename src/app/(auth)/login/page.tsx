@@ -7,6 +7,7 @@ import Link from "next/link";
 import { FiMail, FiLock, FiArrowLeft } from "react-icons/fi";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
+import { Route } from "next";
 
 const Login = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -57,9 +58,8 @@ const Login = () => {
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <label htmlFor="password" className="text-sm font-medium text-gray-700">Password</label>
-                <Link href="/forgot-password" className="text-sm font-medium text-green-600 hover:text-green-500">
-                  Forgot password?
-                </Link>
+                <Link href={"/forgot-password" as Route} className="text-sm font-medium text-green-600 hover:text-green-500">Forgot password?</Link>
+
               </div>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
