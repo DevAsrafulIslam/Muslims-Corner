@@ -1,87 +1,158 @@
 "use client";
 import Image from "next/image";
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Slider, { Settings } from "react-slick";
+import { motion } from "framer-motion";
 
 const settings: Settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 600,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 5000,
-  pauseOnHover: true,
-  fade: true,
 };
 
 function Carousel() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const updatedSettings = {
+    ...settings,
+    beforeChange: (current: number, next: number) => {
+      setCurrentSlide(next);
+    },
+  };
+
   return (
-    <Slider {...settings}>
+    <Slider {...updatedSettings}>
       <div className="relative w-full h-40 md:h-96">
         <Image
-          src="https://images.unsplash.com/photo-1584286595398-a8c264b1dea4?q=80&w=1350&auto=format&fit=crop"
+          src="/images/watch.jpeg"
           width={1350}
           height={0}
-          alt="Premium Prayer Beads"
+          alt=""
           className="object-cover"
         />
-        <div className="container flex items-center absolute top-0 left-0 bg-gradient-to-r from-black/70 to-transparent h-full w-full text-start">
-          <div className="md:w-1/2 p-6 text-white">
-            <h4 className="text-xl uppercase md:text-2xl bg-green-600 w-fit py-2 px-4 rounded-sm font-medium">
-              New Collection
-            </h4>
-            <h3 className="my-4 animate__animated animate__bounceIn text-2xl md:text-5xl font-bold drop-shadow-lg">
-              Handcrafted Prayer Beads
-            </h3>
-            <p className="hidden md:block text-lg">
-              Discover our exquisite collection of handcrafted prayer beads, designed to enhance your spiritual journey.
-            </p>
-          </div>
+        <div className="container flex items-center absolute top-0 left-0 bg-[#b6b6b465] h-full w-full text-start">
+          <motion.div 
+            className="md:w-1/2 p-4"
+            initial={{ opacity: 0, x: -50 }}
+            animate={currentSlide === 0 ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+            transition={{ duration: 0.5 }}
+          >
+            <motion.h4 
+              className="text-xl uppercase md:text-2xl bg-[#f99d2c] w-fit py-2 px-4"
+              initial={{ y: -20, opacity: 0 }}
+              animate={currentSlide === 0 ? { y: 0, opacity: 1 } : { y: -20, opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              25% Off
+            </motion.h4>
+            <motion.h3 
+              className="my-4 text-2xl md:text-5xl bg-slate-400 md:bg-transparent"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={currentSlide === 0 ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              Elegant Timepieces and Accessories
+            </motion.h3>
+            <motion.p 
+              className="hidden md:block"
+              initial={{ y: 20, opacity: 0 }}
+              animate={currentSlide === 0 ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              Discover our exquisite collection of handcrafted watches and
+              accessories, designed to elevate your style.
+            </motion.p>
+          </motion.div>
         </div>
       </div>
       <div className="relative w-full h-40 md:h-96">
         <Image
-          src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=1350&auto=format&fit=crop"
+          src="/images/flower.jpeg"
           width={1350}
           height={0}
-          alt="Premium Prayer Beads"
+          alt=""
           className="object-cover"
         />
-        <div className="container absolute flex items-center top-0 left-0 bg-gradient-to-r from-black/70 to-transparent h-full w-full text-start">
-          <div className="md:w-1/2 p-6 text-white">
-            <h4 className="text-xl uppercase md:text-2xl bg-green-600 w-fit py-2 px-4 rounded-sm font-medium">
+        <div className="container absolute flex items-center top-0 left-0 bg-[#b6b6b465] h-full w-full text-start">
+          <motion.div 
+            className="md:w-1/2 p-4"
+            initial={{ opacity: 0, x: -50 }}
+            animate={currentSlide === 1 ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+            transition={{ duration: 0.5 }}
+          >
+            <motion.h4 
+              className="text-xl uppercase md:text-2xl bg-[#f99d2c] w-fit py-2 px-4"
+              initial={{ y: -20, opacity: 0 }}
+              animate={currentSlide === 1 ? { y: 0, opacity: 1 } : { y: -20, opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
               30% off
-            </h4>
-            <h3 className="my-4 text-2xl md:text-5xl font-bold drop-shadow-lg">
-              Premium Islamic Attire
-            </h3>
-            <p className="hidden md:block text-lg">
-              Elevate your wardrobe with our premium collection of modest and elegant Islamic clothing.
-            </p>
-          </div>
+            </motion.h4>
+            <motion.h3 
+              className="my-4 text-2xl md:text-5xl bg-slate-400 md:bg-transparent"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={currentSlide === 1 ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              Tick & Glow{"'"}s Timeless Elegance
+            </motion.h3>
+            <motion.p 
+              className="hidden md:block"
+              initial={{ y: 20, opacity: 0 }}
+              animate={currentSlide === 1 ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              Discover our exquisite collection of handcrafted watches and
+              accessories, designed to elevate your style.
+            </motion.p>
+          </motion.div>
         </div>
       </div>
       <div className="relative w-full h-40 md:h-96">
         <Image
-          src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?q=80&w=1350&auto=format&fit=crop"
+          src="/images/anafiyabook.webp"
           width={1350}
-          height={0}
-          alt="Sacred Quran Collection"
-          className="object-cover"
+          height={500}
+          alt="Islamic Books"
+          className="object-cover w-full h-full"
+          priority
         />
-        <div className="container absolute flex items-center top-0 left-0 bg-gradient-to-r from-black/70 to-transparent h-full w-full text-start">
-          <div className="md:w-1/2 p-6 text-white">
-            <h4 className="text-xl uppercase md:text-2xl bg-green-600 w-fit py-2 px-4 rounded-sm font-medium">
-              Featured
-            </h4>
-            <h3 className="my-4 text-2xl md:text-5xl font-bold drop-shadow-lg">
-              Sacred Quran Collection
-            </h3>
-            <p className="hidden md:block text-lg">
-              Explore our beautifully crafted Quran collection, perfect for study and reflection.
-            </p>
-          </div>
+        <div className="container absolute flex items-center top-0 left-0 bg-[#b6b6b465] h-full w-full text-start">
+          <motion.div 
+            className="md:w-1/2 p-4"
+            initial={{ opacity: 0, x: -50 }}
+            animate={currentSlide === 2 ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+            transition={{ duration: 0.5 }}
+          >
+            <motion.h4 
+              className="text-xl uppercase md:text-2xl bg-[#f99d2c] w-fit py-2 px-4"
+              initial={{ y: -20, opacity: 0 }}
+              animate={currentSlide === 2 ? { y: 0, opacity: 1 } : { y: -20, opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              New Arrival
+            </motion.h4>
+            <motion.h3 
+              className="my-4 text-2xl md:text-5xl bg-slate-400 md:bg-transparent"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={currentSlide === 2 ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              Islamic Knowledge Collection
+            </motion.h3>
+            <motion.p 
+              className="hidden md:block"
+              initial={{ y: 20, opacity: 0 }}
+              animate={currentSlide === 2 ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              Explore our comprehensive collection of Islamic books and literature to deepen your understanding of faith.
+            </motion.p>
+          </motion.div>
         </div>
       </div>
     </Slider>
