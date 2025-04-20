@@ -46,8 +46,8 @@ export function DropdownMenubar() {
           <Link href="/about">
             <DropdownMenuItem>About</DropdownMenuItem>
           </Link>
-          <Link href="/recycle">
-            <DropdownMenuItem>Recycle</DropdownMenuItem>
+          <Link href="/checkout">
+            <DropdownMenuItem>Checkout</DropdownMenuItem>
           </Link>
           <Link href="/login">
             <DropdownMenuItem>Login</DropdownMenuItem>

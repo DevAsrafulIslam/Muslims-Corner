@@ -1,20 +1,42 @@
-"use client"; // Add this at the top to mark as a client component
+"use client";
 
 import { topproducts } from "@/data/topproducts";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
-import { Product } from "@/context/CartContext";
+import { Product, useCart } from "@/context/CartContext";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 interface TopProductsProps {
   onAddToCart?: (product: Product) => void;
   onBuyNow?: (product: Product) => void;
 }
 
-const TopProducts: React.FC<TopProductsProps> = ({ onAddToCart, onBuyNow }) => {
+const TopProducts: React.FC<TopProductsProps> = () => {
+  const { addToCart } = useCart();
+  const router = useRouter();
+
+  const handleAddToCart = (product: Product) => {
+    addToCart(product);
+    toast.success(`${product.name} added to cart!`);
+  };
+
+  const handleBuyNow = (product: Product) => {
+    addToCart(product);
+    router.push("/checkout");
+  };
   return (
-    <div>
+    <div className="mt-6">
+      {/* Section Title */}
+      <div className="text-center mb-10">
+        <h2 className="text-3xl uppercase font-bold text-gray-800 mb-2">Top Rated Products</h2>
+        <p className="text-lg uppercase text-gray-600">
+          Explore our Top Rated collection of products.
+        </p>
+      </div>
+      {/* Product Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {topproducts.map((topproduct) => (
           <div
@@ -28,9 +50,11 @@ const TopProducts: React.FC<TopProductsProps> = ({ onAddToCart, onBuyNow }) => {
               <div className="absolute top-2 right-2 z-10 bg-primary text-white text-xs font-bold px-2 py-1 rounded">
                 Top Rated
               </div>
-              <img
+              <Image
                 src={topproduct.image}
                 alt={topproduct.name}
+                width={400}
+                height={400}
                 className="w-full h-52 object-cover rounded-t-lg transition-transform duration-500 group-hover:scale-105"
               />
             </Link>
@@ -55,19 +79,18 @@ const TopProducts: React.FC<TopProductsProps> = ({ onAddToCart, onBuyNow }) => {
                   <p className="text-primary font-bold">
                     ৳<span className="text-2xl">{topproduct.price}</span>
                   </p>
-
                 </div>
                 <div className="flex space-x-2">
                   <button
                     className="flex-1 bg-white text-primary border border-primary font-medium py-2 px-3 rounded-md hover:bg-primary hover:text-white transition-colors duration-300 text-sm flex items-center justify-center"
-                    onClick={() => onAddToCart && onAddToCart(topproduct)}
+                    onClick={() =>handleAddToCart(topproduct)}
                   >
                     <FaCartShopping className="mr-1" />
                     Add to Cart
                   </button>
                   <button
                     className="flex-1 bg-primary text-white font-medium py-2 px-3 rounded-md hover:bg-primary/90 transition-colors duration-300 text-sm"
-                    onClick={() => onBuyNow && onBuyNow(topproduct)}
+                    onClick={() => handleBuyNow(topproduct)}
                   >
                     Buy Now
                   </button>

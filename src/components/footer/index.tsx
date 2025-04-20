@@ -17,11 +17,11 @@ export const Footer = () => {
             <div className="flex flex-wrap gap-4">
               <div className="space-y-1 bg-gray-600 py-4 px-3 xl:p-0 xl:bg-transparent rounded xl:rounded-none w-full sm:w-[calc(100%/2-10px)] lg:w-[calc(100%/4-12px)] xl:w-[calc(100%/2-30px-1px)]">
                 <p className="uppercase text-xs text-gray-400">PHONE NUMBER</p>
-                <p className="text-sm">01999870111</p>
+                <p className="text-sm">01234567899</p>
               </div>
               <div className="space-y-1 bg-gray-600 py-4 px-3 xl:p-0 xl:bg-transparent rounded xl:rounded-none w-full sm:w-[calc(100%/2-10px)] lg:w-[calc(100%/4-12px)] xl:w-[calc(100%/2-30px-1px)]">
                 <p className="uppercase text-xs text-gray-400">EMAIL ADDRESS</p>
-                <p className="text-sm">asrafulislam.dev@gmail.com</p>
+                <p className="text-sm">example@gmail.com</p>
               </div>
               <div className="space-y-1 bg-gray-600 py-4 px-3 xl:p-0 xl:bg-transparent rounded xl:rounded-none w-full sm:w-[calc(100%/2-10px)] lg:w-[calc(100%/4-12px)] xl:w-[calc(100%/2-30px-1px)]">
                 <p className="uppercase text-xs text-gray-400">OUR LOCATION</p>

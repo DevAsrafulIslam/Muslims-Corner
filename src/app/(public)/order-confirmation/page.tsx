@@ -20,8 +20,8 @@ const OrderConfirmation = () => {
       <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md text-center">
         <div className="flex justify-center mb-4">
           <Image 
-            src="/logo.png" 
-            alt="Muslim's Corner Logo" 
+            src="/logo/muslimlogo.png" 
+            alt="Muslims Corner Logo" 
             width={100} 
             height={100} 
             className="rounded-md"
@@ -55,7 +55,7 @@ const OrderConfirmation = () => {
           </Link>
           
           <button 
-            onClick={() => router.push(`/orders/${orderNumber}`)}
+            onClick={() => router.push}
             className="bg-white text-primary border border-primary py-2 px-4 rounded-md hover:bg-gray-50 transition-colors"
           >
             View Order

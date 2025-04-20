@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import React, { useState, FormEvent, ChangeEvent } from "react";
 import { FiTrash2, FiMinus, FiPlus } from "react-icons/fi";
 import Link from "next/link";
+import Image from "next/image";
 
 interface FormData {
   firstName: string;
@@ -74,9 +75,11 @@ const CheckoutPage: React.FC = () => {
             <div className="space-y-4">
               {cart.map((item) => (
                 <div key={item.id} className="flex items-center border-b pb-4">
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.name}
+                    height={100}
+                    width={100}
                     className="w-20 h-20 object-cover rounded-md"
                   />
                   <div className="ml-4 flex-1">
