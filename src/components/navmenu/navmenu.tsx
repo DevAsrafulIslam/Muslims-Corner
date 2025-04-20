@@ -12,7 +12,6 @@ export function NavMenu() {
     { name: "Home", path: "/" },
     { name: "Menu", path: "/menu" },
     { name: "About", path: "/about" },
-    { name: "Checkout", path: "/checkout" },
     { name: "Login", path: "/login" },
     { name: "Register", path: "/register" },
   ];
